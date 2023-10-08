@@ -1,0 +1,7 @@
+<input type="text" data-bind="value: todo, valueUpdate: 'afterkeydown'"/>
+<button type="text" data-bind="click: addTodo">Add Todo</button>
+<div data-bind="value: todos">
+    <ul data-bind="foreach: todos">
+        <li data-bind="text: $data"></li>
+    </ul>
+</div>
